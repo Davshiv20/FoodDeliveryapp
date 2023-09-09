@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ChooseOne"
+    android:background="@drawable/bgtry">
+
+
+    <TextView
+        android:id="@+id/option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose an Option"
+        android:textSize="38sp"
+        android:fontFamily="@font/copilme"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRestaurant"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Restaurant"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/black_bg"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCustomer"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Customer"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@drawable/black_bg"/>
+</LinearLayout>

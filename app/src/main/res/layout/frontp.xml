@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Front_page"
+    android:background="@drawable/finaltry"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+
+    <TextView
+        android:id="@+id/foodTitle1"
+        android:layout_width="470dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ahgarniya"
+        android:paddingTop="250dp"
+        android:layout_marginHorizontal="50dp"
+        android:text="GreenEats"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="332dp" />
+
+    <TextView
+        android:id="@+id/foodTitle2"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="80dp"
+        android:fontFamily="@font/copilme"
+        android:text="Delicious Healthy Food"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+</LinearLayout>

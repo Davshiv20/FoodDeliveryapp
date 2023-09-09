@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FoodDeliveryapk</string>
+    <string-array name="State">
+        <item>Maharashtra</item>
+        <item>Gujarat</item>
+    </string-array>
+</resources>
