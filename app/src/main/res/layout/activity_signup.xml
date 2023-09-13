@@ -21,7 +21,7 @@
             android:layout_height="32dp"
             android:layout_margin="10dp"
             android:background="@drawable/circular_bg"
-            android:backgroundTint="@color/black">
+            android:backgroundTint="@color/Black">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -42,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:textColor="@color/black"
+                android:textColor="@color/Black"
                 android:textSize="18sp"
                 android:text="2"/>
         </RelativeLayout>
@@ -57,7 +57,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:textColor="@color/black"
+                android:textColor="@color/Black"
                 android:textSize="18sp"
                 android:text="3"/>
         </RelativeLayout>
@@ -67,7 +67,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:src="@drawable/phone_icon"
-        app:tint="@color/black"
+        app:tint="@color/Black"
         android:layout_weight="20"
         />
 
@@ -81,7 +81,7 @@
         android:textStyle="bold"
         android:textSize="25sp"
         android:layout_weight="5"
-        android:textColor="@color/black"
+        android:textColor="@color/Black"
         android:fontFamily="@font/copilme"/>
 
     <LinearLayout
@@ -97,7 +97,7 @@
             app:ccp_showFlag="false"
             app:ccp_showNameCode="false"
             android:id="@+id/login_countrycode"
-            app:ccp_arrowColor="@color/black"
+            app:ccp_arrowColor="@color/Black"
             android:padding="10dp"/>
 
         <EditText
@@ -106,11 +106,12 @@
             android:hint="Mobile"
             android:inputType="phone"
             android:layout_margin="10dp"
-            android:background="@drawable/black_bg"
+            android:background="@drawable/whitebackground"
             android:elevation="5dp"
+            android:textSize="25dp"
             android:fontFamily="@font/copilme"
-            android:textColorHint="@color/white"
-            android:textColor="@color/white"
+            android:textColorHint="@color/Black"
+            android:textColor="@color/Black"
             android:padding="20dp"
             android:id="@+id/login_mobile_number"
             />
@@ -129,6 +130,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/black_bg"
             android:text="Send otp"
+            android:textSize="25dp"
             android:fontFamily="@font/copilme"
             android:textColor="@color/white"
             android:layout_marginHorizontal="20dp"
@@ -136,7 +138,7 @@
         <ProgressBar
             android:layout_width="32dp"
             android:layout_height="wrap_content"
-            android:indeterminateTint="@color/black"
+            android:indeterminateTint="@color/Black"
             android:layout_gravity="center"
             android:id="@+id/login_progress_bar"/>
     </LinearLayout>

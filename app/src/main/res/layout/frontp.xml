@@ -14,24 +14,39 @@
         android:id="@+id/foodTitle1"
         android:layout_width="470dp"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/ahgarniya"
+        android:fontFamily="@font/scripto"
         android:paddingTop="250dp"
         android:layout_marginHorizontal="50dp"
-        android:text="GreenEats"
-        android:textColor="@color/black"
-        android:textSize="40sp"
+        android:text="Health"
+
+
+        android:textColor="@color/Black"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="332dp" />
+    <TextView
+        android:id="@+id/foodTitle2"
+        android:layout_width="470dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/scripto"
+        android:paddingTop="0dp"
+        android:layout_marginHorizontal="120dp"
+        android:text="Nectar"
+        android:textColor="@color/Black"
+        android:textSize="80sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="177dp"
         tools:layout_editor_absoluteY="332dp" />
 
     <TextView
-        android:id="@+id/foodTitle2"
+        android:id="@+id/foodTitle3"
         android:layout_width="328dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_marginHorizontal="80dp"
         android:fontFamily="@font/copilme"
         android:text="Delicious Healthy Food"
-        android:textColor="@color/black"
+        android:textColor="@color/Black"
         android:textSize="30sp" />
 </LinearLayout>

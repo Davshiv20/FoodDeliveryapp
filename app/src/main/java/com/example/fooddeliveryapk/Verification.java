@@ -29,6 +29,7 @@ import org.w3c.dom.Text;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.TimeUnit;
@@ -53,8 +54,6 @@ public class Verification extends AppCompatActivity {
         nextBtn = findViewById(R.id.login_next_btn);
         progressBar = findViewById(R.id.login_progress_bar);
         resendOtpTextView = findViewById(R.id.resend_otp_textview);
-
-
         phoneNumber = getIntent().getExtras().getString("phone");
 
         sendOtp(phoneNumber,false);
@@ -128,7 +127,7 @@ public class Verification extends AppCompatActivity {
                 setInProgress(false);
                 if(task.isSuccessful()){
                     AndroidUtil.showToast(getApplicationContext(),"OTP verification successful");
-                    Intent intent = new Intent(Verification.this,CustomerReg.class);
+                    Intent intent = new Intent(Verification.this,ChooseOne.class);
                     intent.putExtra("phone",phoneNumber);
                     startActivity(intent);
                 }else{

@@ -21,7 +21,7 @@
             android:layout_height="32dp"
             android:layout_margin="10dp"
             android:background="@drawable/circular_bg"
-            android:backgroundTint="@color/black">
+            android:backgroundTint="@color/Black">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -37,7 +37,7 @@
             android:layout_height="32dp"
             android:layout_margin="10dp"
             android:background="@drawable/circular_bg"
-            android:backgroundTint="@color/black">
+            android:backgroundTint="@color/Black">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -58,7 +58,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:textColor="@color/black"
+                android:textColor="@color/Black"
                 android:textSize="18sp"
                 android:text="3"/>
         </RelativeLayout>
@@ -68,7 +68,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:src="@drawable/password"
-        app:tint="@color/black"
+        app:tint="@color/Black"
         android:layout_weight="20"
         />
 
@@ -127,7 +127,7 @@
         <ProgressBar
             android:layout_width="32dp"
             android:layout_height="wrap_content"
-            android:indeterminateTint="@color/black"
+            android:indeterminateTint="@color/Black"
             android:layout_gravity="center"
             android:id="@+id/login_progress_bar"/>
     </LinearLayout>

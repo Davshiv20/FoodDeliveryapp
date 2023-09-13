@@ -15,6 +15,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     TextView foodTitle1;
     TextView foodTitle2;
+    TextView foodTitle3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,12 +25,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.frontp);
         foodTitle1 = (TextView)findViewById(R.id.foodTitle1);
         foodTitle2 = (TextView)findViewById(R.id.foodTitle2);
+        foodTitle3= (TextView)findViewById(R.id.foodTitle3);
         foodTitle1.animate().alpha(0f).setDuration(0);
         foodTitle2.animate().alpha(0f).setDuration(0);
+        foodTitle3.animate().alpha(0f).setDuration(0);
         foodTitle1.animate().alpha(1f).setDuration(1000).setListener(new AnimatorListenerAdapter() {
             @Override
             public void onAnimationEnd(Animator animation) {
-                foodTitle2.animate().alpha(1f).setDuration(800);
+
+                foodTitle2.animate().alpha(1f).setDuration(400);
+                foodTitle3.animate().alpha(1f).setDuration(800);
             }
         });
         new Handler().postDelayed(new Runnable() {
