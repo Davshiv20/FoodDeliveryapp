@@ -1,44 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:padding="16dp"
     >
 
-    <!-- ImageView for the food image -->
+
     <ImageView
         android:id="@+id/food_image"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginHorizontal="200dp"
+        android:layout_marginTop="50dp"
         android:scaleType="centerCrop"
+
         android:src="@drawable/food_img_1"
         android:contentDescription="@string/food_image_description"
     />
-
     <!-- TextView for the food name -->
     <TextView
+        android:layout_marginTop="100dp"
         android:id="@+id/food_name"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/copilme"
+        android:layout_marginBottom="10dp"
         android:textColor="@android:color/black"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
         android:text="Sprouts bowl" /> <!-- Replace with the actual food name -->
 
     <!-- TextView for the food price -->
     <TextView
         android:id="@+id/food_price"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="16sp"
         android:textColor="@color/colorPrimary"
-        android:layout_marginTop="4dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="Rs. 70" /> <!-- Replace with the actual food price -->
+        android:text="Rs. 70"
+        android:layout_marginTop="130dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/add_to_cart_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:text="Add to Cart"
+        android:fontFamily="@font/copilme"
+        android:layout_marginTop="150dp"/><!-- Replace with the actual food price -->
 
-</LinearLayout>
+
+
+</RelativeLayout>

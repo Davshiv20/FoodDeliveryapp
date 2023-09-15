@@ -13,13 +13,17 @@
         android:theme="@style/Theme.FoodDeliveryapk"
         tools:targetApi="31">
         <activity
+            android:name=".PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FoodPreviewActivity"
+            android:exported="false" />
+        <activity
             android:name=".menu"
             android:exported="false" />
-       
         <activity
             android:name=".admin"
             android:exported="false" />
-
         <activity
             android:name=".CustomerLogin"
             android:exported="false" />

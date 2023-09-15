@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/finaltry"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/foodPreviewRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/foodPreviewHeader"
+        android:layout_marginTop="42dp"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/foodPreviewHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Preview"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/orderButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_bg"
+        android:textColor="@color/white"
+        android:fontFamily="@font/copilme"
+        android:text="Order Your food!"
+        android:layout_alignBottom="@id/foodPreviewRecyclerView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+
+
+
+</RelativeLayout>

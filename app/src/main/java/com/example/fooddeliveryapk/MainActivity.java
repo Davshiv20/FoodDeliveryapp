@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             public void onAnimationEnd(Animator animation) {
 
                 foodTitle2.animate().alpha(1f).setDuration(400);
-                foodTitle3.animate().alpha(1f).setDuration(800);
+                foodTitle3.animate().alpha(1f).setDuration(1200);
             }
         });
         new Handler().postDelayed(new Runnable() {

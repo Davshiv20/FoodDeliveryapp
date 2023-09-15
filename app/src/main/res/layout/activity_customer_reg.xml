@@ -99,9 +99,9 @@
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:padding="10dp"
-            android:hint="Username"
+            android:hint="Full name"
             android:inputType="text"
             android:layout_margin="10dp"
             android:background="@drawable/whitebackground"
@@ -133,7 +133,7 @@
         android:layout_weight="5"/>
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:padding="10dp"
         android:hint="Address"
         android:layout_marginHorizontal="10dp"
