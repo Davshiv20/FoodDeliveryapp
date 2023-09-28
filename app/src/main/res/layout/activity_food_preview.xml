@@ -3,25 +3,51 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/finaltry"
-    >
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".FoodPreviewActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/foodPreviewRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
 
-        android:layout_below="@+id/foodPreviewHeader"
-        android:layout_marginTop="42dp"
-        android:padding="8dp" />
 
     <TextView
         android:id="@+id/foodPreviewHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Food Preview"
+        android:text="Preview your order"
         android:textSize="18sp"
+
+        android:textColor="@color/Black"
+        android:fontFamily="@font/ahgarniya"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp" />
+    <LinearLayout
+        android:id="@+id/selectedItemsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+
+        android:layout_below="@+id/foodPreviewHeader"
+        >
+
+
+
+        <!-- Other layout elements here -->
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/totalPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:text="Total Price: Rs. 0.00"
+    android:fontFamily="@font/copilme"
+    android:layout_below="@id/selectedItemsLayout"
+    android:textColor="@android:color/black"
+    android:layout_gravity="start" />
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/orderButton"
         android:layout_width="250dp"
@@ -29,12 +55,9 @@
         android:background="@drawable/black_bg"
         android:textColor="@color/white"
         android:fontFamily="@font/copilme"
-        android:text="Order Your food!"
-        android:layout_alignBottom="@id/foodPreviewRecyclerView"
+        android:text="Order Your Food!"
+        android:layout_below="@id/totalPriceTextView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp" />
-
-
-
 
 </RelativeLayout>

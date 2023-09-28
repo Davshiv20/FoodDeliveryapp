@@ -44,6 +44,7 @@ dependencies {
     implementation("com.google.firebase:firebase-storage:20.2.1")
     implementation("com.google.firebase:firebase-messaging-ktx:23.2.1")
     testImplementation("junit:junit:4.13.2")
+    implementation("com.google.code.gson:gson:2.8.8")
     implementation ("androidx.annotation:annotation:1.1.0")
     implementation ("com.google.firebase:firebase-analytics:17.2.1")
     implementation ("com.google.firebase:firebase-database:19.2.0")
@@ -51,8 +52,9 @@ dependencies {
     implementation(platform("com.google.firebase:firebase-bom:32.2.3"))
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation("com.google.firebase:firebase-auth")
+    implementation ("androidx.cardview:cardview:1.0.0")
     implementation("androidx.recyclerview:recyclerview:1.3.1")
-    // For control over item selection of both touch and mouse driven selection
+
     implementation("androidx.recyclerview:recyclerview-selection:1.1.0")
 
 }

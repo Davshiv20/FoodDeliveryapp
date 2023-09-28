@@ -100,12 +100,12 @@
             android:hint="OTP"
             android:inputType="number"
             android:maxLength="6"
-
+            android:textColor="@color/Black"
             android:layout_margin="20dp"
             android:background="@drawable/whitebackground"
             android:elevation="5dp"
             android:id="@+id/login_otp"
-            />
+            android:autofillHints="OTP" />
 
     </LinearLayout>
 

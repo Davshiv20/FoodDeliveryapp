@@ -8,6 +8,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
@@ -39,6 +41,9 @@ public class CustomerReg extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_customer_reg);
         AddressInput=findViewById(R.id.login_address);
         usernameInput = findViewById(R.id.login_username);
@@ -52,8 +57,11 @@ public class CustomerReg extends AppCompatActivity {
 
 
         letMeInBtn.setOnClickListener((v -> {
-            insertdata();
-
+            Intent intent = new Intent(CustomerReg.this, menu.class);
+            intent.putExtra("name", usernameInput.getText().toString().trim());
+            intent.putExtra("address", AddressInput.getText().toString().trim());
+            intent.putExtra("phoneNo", phoneNumber.trim());
+            startActivity(intent);
         }));
 
 

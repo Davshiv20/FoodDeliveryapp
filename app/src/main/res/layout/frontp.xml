@@ -8,30 +8,33 @@
     android:orientation="vertical"
     tools:context=".MainActivity"
     >
-
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginHorizontal="120dp"
+        android:src="@drawable/logohn"
+        ></ImageView>
 
     <TextView
         android:id="@+id/foodTitle1"
         android:layout_width="470dp"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="35dp"
         android:fontFamily="@font/scripto"
-        android:paddingTop="250dp"
-        android:layout_marginHorizontal="50dp"
+        android:paddingTop="10dp"
         android:text="Health"
-
-
         android:textColor="@color/Black"
         android:textSize="80sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="177dp"
-        tools:layout_editor_absoluteY="332dp" />
+        />
+
     <TextView
         android:id="@+id/foodTitle2"
         android:layout_width="470dp"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/foodTitle1"
+        android:layout_marginHorizontal="100dp"
         android:fontFamily="@font/scripto"
-        android:paddingTop="0dp"
-        android:layout_marginHorizontal="120dp"
         android:text="Nectar"
         android:textColor="@color/Black"
         android:textSize="80sp"
@@ -46,7 +49,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginHorizontal="80dp"
         android:fontFamily="@font/copilme"
-        android:text="Delicious Healthy Food"
+        android:text="Delicious  Healthy  Food"
         android:textColor="@color/Black"
         android:textSize="30sp" />
 </LinearLayout>

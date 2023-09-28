@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/finaltry"
+    tools:context=".OrderScheduleActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the time when you want to schedule the delivery"
+        android:id="@+id/text"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/copilme"
+        android:textColor="@color/Black"
+        android:textSize="30dp"
+        ></TextView>
+
+    <!-- DatePicker for selecting the date -->
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/text"
+        />
+
+    <!-- TimePicker for selecting the time -->
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/datePicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <!-- EditText for entering specific instructions -->
+    <EditText
+        android:id="@+id/instructionsEditText"
+        android:layout_width="match_parent"
+        android:height="50dp"
+        android:fontFamily="@font/copilme"
+        android:textColor="@color/Black"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timePicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Enter specific instructions (optional)"/>
+
+    <!-- Button to confirm the order scheduling -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/confirmButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/instructionsEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/black_bg"
+        android:text="Confirm"/>
+
+</RelativeLayout>
+</ScrollView>
